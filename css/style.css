@@ -1,0 +1,142 @@
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background: #f6f5f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Prompt', sans-serif;
+    background-image:url('img/d.jpg');
+	background-size: cover;
+	height: 100vh;
+	overflow: hidden;
+	margin: -20px 0 50px;
+    
+}
+.center {
+	background: #f5c900;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+.center h1 {
+	text-align: center;
+	width: 50%;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+.center h1:hover{
+    color: #ffff68;
+}
+.center form{
+	padding: 0px 40px;
+	box-sizing: border-box;
+}
+form .txt-field{
+	position: relative;
+	margin: 30px 0px;
+}
+
+.txt-field input {
+	width: 45%;
+	padding: 0px 5px;
+	height: 40px;
+	font-size: 1rem;
+	color: rgb(0, 0, 0);
+	background: none;
+	border: none;
+	border-bottom: 2px solid rgb(0, 0, 0);
+	outline: none;
+}
+.txt-field label {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: rgb(0, 0, 0);
+	transform: translateY(-50%);
+	font-size: 1rem;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label{
+	top: -2px;
+	color: #ffff5c;
+	font-size: 0.85rem;
+}
+.txt-field input:focus{
+	border-bottom: 2px solid #ffff5c;
+}
+button[type="submit"]{
+	width: 45%;
+	height: 50px;
+	border: none;
+	background-color:rgb(0, 0, 0);
+	border-radius: 25px;
+	font-size: 1.15rem;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	color: rgb(255, 255, 255);
+	transition: 0.5s;
+}
+button[type="submit"]:hover{
+	background-color: rgb(255, 230, 0);
+	color: black;
+}
+.forget {
+	width: 45%;
+	display: block;
+	text-align: right;
+	margin: 10px 10px 5px 5px;
+	color: rgb(255, 4, 4);
+	text-decoration: none;
+}
+.forget:hover {
+	text-decoration: underline;
+}
+.signup-link {
+	width: 45%;
+	margin: 30px 0px;
+	text-align: center;
+	color: rgb(0, 4, 255);
+}
+.signup-link a{
+	color: rgb(0, 191, 216);
+	text-decoration: none;
+}
+.signup-link a:hover {
+	text-decoration: underline;
+}
+
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+.overlay {
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+	
+}
+.overlay img {
+	transform: translate(98%);
+}
